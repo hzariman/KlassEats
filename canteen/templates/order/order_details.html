@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<section class = 'page-section-menu'>
+  <h1 align='center' >Order Details</h1>
+  <div class="jumbotron">
+    <h3>Total: ${{order.total}}</h3>
+    <h3>Items:</h3>
+    {% for order_item in order.order_items.all %}
+      <h4>{{order_item}} - ${{order_item.price}}</h4>
+      <p> Quantity : {{order_item.quantity}}</p>
+    {% endfor %}
+  </div>
+  <p></p> <!-- just for space under button. *change later* -->
+</section>
+
+{% endblock %}

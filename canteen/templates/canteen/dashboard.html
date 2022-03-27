@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <section class = 'page-section-menu'>
+        {% if messages %}
+        {% for message in messages%}
+            <div class = 'alert alert-{{ message.tags}}'>
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+        {% if user.is_student %}
+        {% for order in orders %}
+        <article class="media content-section">
+            <div class="media-body">
+            <h2><a class="article-title" href='{% url "canteen:order_detail" pk=order.id %}'> Order No.{{ order.id }} </a></h2>
+            <p class="article-content">Price : RM{{ order.total }}</p>
+            </div>
+        </article>
+        {% endfor %}
+
+        {% elif user.is_staff %}
+        {% for order in orders %}
+        <article class="media content-section">
+            <div class="media-body">
+            
+            <h2><a class="article-title" href='{% url "canteen:order_detail" pk=order.id %}'>  Order No.{{ order.id }} </a></h2>
+            <p class="article-content">Customer Name : {{ order.customer.first_name }}</p>
+            <p class="article-content">Price : RM{{ order.total }}</p>
+            </div>
+        </article>
+        {% endfor %}
+        {% endif %}
+{% endblock content%}

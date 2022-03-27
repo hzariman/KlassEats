@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+    <section class = 'page-section-menu'>
+            {% if messages %}
+            {% for message in messages%}
+                <div class = 'alert alert-{{ message.tags}}'>
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+        {% for food in foodlist %}
+        <article class="media content-section">
+            <div class="media-body">
+            <h2><a class="article-title" href="{% url 'canteen:modify_food' food.id %}">{{ food.name }}</a></h2>
+            <p class="article-content">Price : RM{{ food.price }}</p>
+            <p class="article-content">Description : {{ food.description }}</p>
+            <a href='{% url "canteen:add-to-cart" food.id %}' class="btn btn-outline-info" role="button">Add to order</a> <a href='{% url "canteen:delete_food" food.id %}' class="btn btn-outline-info" role="button">Delete</a>
+            </div>
+        </article>
+    {% endfor %}    
+{% endblock content%}

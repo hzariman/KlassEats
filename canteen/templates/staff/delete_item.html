@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags%}
+{% block content %}
+
+<section class = "page-section">
+    <div class = 'container'>
+    <div class="row">
+    <div class="col-md-12">
+        <div class = 'content-section'>
+            <form method="POST" >
+                {% csrf_token %}
+                <fieldset class='form-group'>
+                    <legend class='border-bottom mb-4'> Delete an Item from the Menu</legend>
+                </fieldset>
+                <div class = 'form-group'>
+                    <button class = 'btn btn-outline-info' type='submit'> Delete </button>
+                </div>
+            </form>
+            <a href='{% url "canteen:menu" %}' class="btn btn-outline-info" role="button">Cancel</a>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</section>
+
+{% endblock content%}
