@@ -97,8 +97,6 @@ The steps below are tailored for Conda environments:
    python manage.py runserver
    ```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 <!-- LICENSE -->
 ## License
 
@@ -111,8 +109,6 @@ Your Name - Hariz Zariman - hzariman@gmail.com
 
 Project Link: [https://github.com/hzariman/KlassEats](https://github.com/hzariman/KlassEats)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- ACKNOWLEDGMENTS -->
@@ -121,9 +117,6 @@ Project Link: [https://github.com/hzariman/KlassEats](https://github.com/hzarima
 * [Django Official Documentation]()
 * [Bootstrap themes](https://startbootstrap.com/)
 * [Python Django Youtube Tutorial](https://www.youtube.com/watch?v=UmljXZIypDc&list=PLLtIxaRk6P3JRiiW1SAV2BLhuuSSCULRn&ab_channel=CoreySchafer)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
