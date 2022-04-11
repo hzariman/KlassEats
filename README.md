@@ -98,10 +98,13 @@ In order to manage different object groups, you must create a superuser via the 
 A video demo of the website can be found, demonstrating the features that were main targets to implement. This can be found by scanning the QR code below or following this [link](https://youtu.be/ixkiAty3mww).
 
 <div align="center">
-  <a href="https://upload.wikimedia.org/wikipedia/ms/b/bd/Logo_Alice_Smith_School.png">
-    <img src="https://upload.wikimedia.org/wikipedia/ms/b/bd/Logo_Alice_Smith_School.png" alt="Logo" width="160" height="160">
+  <a href="https://youtu.be/ixkiAty3mww">
+    <img src="static/img/klasseatsqr.png" alt="Logo" width="160" height="160">
   </a>
 </div>
+
+
+Please note: the timestamps refer to the different rubic points aimed to be achieved at the end of the [project writeup](https://youtu.be/ixkiAty3mww).
 
 
 <!-- LICENSE -->
