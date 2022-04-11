@@ -69,21 +69,9 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-A version of Python (3.7 or later) is required to run the later server. The link for this can be found above. 
+A version of Python (3.7 or later) is required to run the development server. The link for this can be found above. 
 It is also important to install the dependencies later after downloading the contents, otherwise the program will not correctly function.
 It is highly recommendeded to install these dependencies on a virtual environment such as [Conda](https://docs.conda.io/en/latest/miniconda.html) or VirtualEnv.
-
-The steps below are tailored for Conda environments:
-
-* Create an environment:
-  ```sh
-  conda create --name "INSERT NAME"
-  ```
-  
-* Activate the environment:
-  ```sh
-  conda activate "ENVIRONMENT NAME"
-  ```
   
 ### Installation
 
@@ -96,6 +84,25 @@ The steps below are tailored for Conda environments:
    ```sh
    python manage.py runserver
    ```
+### Creating User Types
+In order to manage different object groups, you must create a superuser via the Django framework. This can be done by entering the following:
+ ```sh
+   python manage.py createsuperuser
+   ```
+  Then proceed to enter a desired name and password. Once the server is run, login and navigate to the /admin page to view all registered objects (users and menu items). From there, the admin user is able to assign staff roles to other accounts.
+  
+  Please note: Creating users through the main website requires an email address ending in '@alice-smith.edu.my' to register.
+  <br>For more information, visit the [project writeup](https://docs.google.com/document/d/1V3_2wymmc5suPy9miqJc3s3rGwfHhzAKnqZuX5K8ujQ/edit?usp=sharing)</br>
+
+## Video Demo
+A video demo of the website can be found, demonstrating the features that were main targets to implement. This can be found by scanning the QR code below or following this [link](https://youtu.be/ixkiAty3mww).
+
+<div align="center">
+  <a href="https://upload.wikimedia.org/wikipedia/ms/b/bd/Logo_Alice_Smith_School.png">
+    <img src="https://upload.wikimedia.org/wikipedia/ms/b/bd/Logo_Alice_Smith_School.png" alt="Logo" width="160" height="160">
+  </a>
+</div>
+
 
 <!-- LICENSE -->
 ## License
